@@ -1,0 +1,1630 @@
+/* 
+CSS by Freja (#8424).
+May only be used on (#8424) den!
+This code may not be altered, used, re-uploaded or sold without my permission!
+*/
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+GOOGLE FONTS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+BODY
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+/* Controls the main background of the entire page */
+body {
+    font-family: "OpenSans", Helvetica, Tahoma, Arial, sans-serif;
+    background: url('https://i.ibb.co/XmVJWfL/pastel-clouds-rainbow-hues-desktop-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 14px;
+    color: #574d76;
+}
+
+/* Removes the ugly border when clicking links */
+:focus:not(:focus-visible) {
+outline: none;
+box-shadow: none;
+}
+
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+TOPBAR
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Welcome back, Username */
+.topbar {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    color: #37414f;
+    border: double 4px #4553a2;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Silver Beetle Image */
+img[src$="icon-beetle-silver.png"] {
+    content: url(https://i.ibb.co/0pBmCzM8/sb.png) !important;
+}
+
+/* Gold Beetle Image */
+img[src$="icon-beetle-gold.png"] {
+    content: url(https://i.ibb.co/gLjbhQ1s/gb.png) !important;
+}
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+NAVBAR
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+/* Navigation Bar (Den, Crossroads, Hoard, Oasis) etc */
+.navbar {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    border: double 4px #4553a2;
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Removes the border around the (☰) lines on phone */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+
+/* Color of the (☰) lines on phone */
+.navbar-default .navbar-toggle .icon-bar {
+    background: #f5edf8 !important;
+}
+
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: transparent;
+}
+
+
+/* Border/Divider when expanding the bar on phone */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #4553a2 !important;
+}
+
+
+/* Links */
+.navbar-default .navbar-nav > li > a {
+    color: #f5edf8;
+    transition: 0.3s;
+}
+
+/* Links Hover */
+.navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar .active a:link,
+.navbar .active a:visited,
+.navbar .active a:active,
+.navbar .active a:focus,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+    background: none;
+    color: #fff;
+    border-radius: 2px;
+    text-shadow: 0px 0px 7px #fe92d0;
+}
+
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+BREADCRUMB
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Home / Lions Name's Den */
+.breadcrumb {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    border: double 4px #4553a2;
+    border-radius: 10px;
+}
+
+/* Lions Name's Den Text */
+.breadcrumb > .active, .breadcrumb > .active:before
+{
+    color: #473b55 !important;
+}
+
+/* CSS Credit */
+.breadcrumb::after {
+    content: "Forever living in a fantasy world...";
+    position: absolute;
+    right: 16%;
+    color: #473b55;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 1.4px;
+    }
+
+/* Bookmark Button */
+input.floatright, input.floatright:hover {  
+    position: relative;
+    top: -5px;
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+HEADERS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Big "Name's Den" title, Cave, Clan & Branch Names */
+h1 {
+	color: #f8e9ff;
+	font-size: 28px;
+    text-shadow: 0px 0px 2px #000;
+}
+
+
+/* Clan Description title */
+h2 {
+	color: #fff;
+	font-size: 24px;
+    font-family: "Twinkle Star";
+    margin-bottom: -25px;
+}
+
+/* Feed All Play All Titles */
+h3 {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+/* Owned by Name (In Caves) */
+h1 small {
+	color: #c6caf0;
+}
+
+/* Sidebar Titles */
+.sidebar h3 {
+	color: #eaddf0;
+	font-size: 20px;
+    text-shadow: 0px 0px 2px #000;
+}
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+CUSTOM HEADERS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+h4 {
+	color: #fff;
+	font-size: 30px;
+    font-family: Twinkle Star;
+}
+
+
+h5 {
+	color: #fff;
+	font-size: 26px;
+    font-family: Sour Gummy;
+}
+
+
+h6 {
+	color: #fff;
+	font-size: 24px;
+    font-family: Inconsolata;
+    letter-spacing: 3px;
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+MAIN
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Lioden Logo */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://i.ibb.co/FqK7dGmK/Lioden-Pastel-Pink.png');
+}
+
+
+.col-md-9 {
+    background: none; /* IGNORE */
+}
+
+
+.col-md-3 {
+    background: none; /* IGNORE */
+}
+
+
+/* Controls the background behind territory and sidebar boxes */
+.container.main {
+	background: #65699ead;
+	border: double 4px #4553a2;
+    border-top: none !important;
+	border-radius: 15px;
+}
+
+
+/* Footer with Lioden Copyright Text */
+.footer {
+background: #65699ead;
+	border: double 4px #4553a2;
+    color: #fff;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+
+
+/* Footer Icon */
+.text-right img {
+filter: brightness(1000%); /* Higher number = Brighter images */
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+TABLES
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Table Headers */
+.top.center, .table th, #player .top, #allies .top, #clans .top, div.feature h3 {
+background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    color: #ebddeb;
+    border-bottom: double 4px #4553a2 !important;
+    box-shadow: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-shadow: 0px 0px 2px #000;
+}
+
+/* Same Background as Above */
+.table .top {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    border-bottom: double 4px #4553a2 !important;
+}
+
+/* Kings Image */
+#lion_image>div {
+border-radius: 100% !important;
+    border: none;
+}
+
+/* Add image to king picture */
+#lion_image:after {
+content:url("https://static.wikia.nocookie.net/infinity-nikki/images/a/a0/Blossoming_Tales_Icon.png/revision/latest?cb=20250224114609");
+position:absolute;
+	left: -25px;
+	top: -14px;
+	transform: scale(1 ,1); 
+}
+
+/* King Image Hover */
+div#lion_image:hover {
+filter: none;
+}
+
+/* Player Avatar */
+#player td.right > img {
+	border-radius: 50% !important;
+    border: double 4px #4553a2;
+}
+
+/* Territory Boxes (King, player, sparring, allies etc) */
+.table, #about {
+    background: #b2aee7;
+    border: double 4px #4553a2;
+    color: #6b689a;
+    border-radius: 10px !important;
+    border-collapse: separate
+}
+
+/* Table Footers */
+.table .bottom {
+   background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%) !important;
+    color: #fff;
+    border-top: double 4px #4553a2; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Player Box Footer (Bar with Block Member and Add Friend) */
+#player .right_odd {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%) !important;
+    color: #fff;
+    border-top: double 4px #4553a2; 
+    box-shadow: none;
+    transform: translateY(0px); /* Don't change this */
+    border-bottom-left-radius: 10px;
+}
+
+/* Territory Boxes Footers Right Side (For rounded corners) */
+.right_odd.text-right {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: /* Don't change this */ 0px !important;
+}
+
+/* Left side of kings & players stats boxes */
+.inner-table .left {
+    background: #797cb7 !important;
+    color: #d8d1e5;
+    border-top-left-radius: 5px !important;                                 
+    border-bottom-left-radius: 5px !important;
+    border: solid 1px #273064;
+    border-right: none !important;
+    margin-left: 10px !important;
+}
+
+
+/* Right side of kings & players stats boxes */
+.inner-table .right {
+    background: #cab7e7;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid 1px #4553a2;
+}
+
+/* Removes the line in the player box */
+hr {
+border: none;
+margin-top: 2px;    
+}
+
+
+/* Centers links in player box when visiting own den */
+.center.xlarge {
+font-size: 13px !important;
+float: none !important;
+display: block !important;
+}
+
+
+/* Makes all the links in player profile 1 line */
+.right .xlarge {
+font-size: 13px;
+float: left;
+margin-left: 40px;
+}
+
+/* Makes all the links in player profile 1 line */
+.right p.center {
+float: left;
+margin-top: 0px !important;
+margin-left: 17px;
+display: flex;
+}
+
+
+/* Removes the :|: between links in player box */
+.xlarge .text-muted, .center .text-muted {
+    font-size: 0px !important;
+}
+
+
+/* Controls right side of the sparring box */
+#sparring .right_odd {
+    background: none !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+
+/* Feed all Play all boxes */
+div .feature {
+    background: #b2aee7;
+    color: #6b689a;
+    border: double 4px #4553a2;
+    border-radius: 15px;
+}
+
+/* Header text inside the FAPA boxes */
+div.feature h3 {
+    padding: 8px 15px;
+    width: 398px;
+    font-size: 15px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    top: -5px;
+    position: relative;
+    margin-left: -8px;
+    text-align: left;
+}
+
+/* Makes the FAPA boxes the same height */
+div .feature {
+    height: 160px;
+}
+
+/* Info text above the FAPA boxes */
+center > b {
+    color: #dfdeee !important;
+}
+
+
+/* FAPA number of days left */
+b span {
+color: #eec5d9 !important;
+}
+
+
+/* Recent allies dividers */
+#allies .left {
+background: none;
+    height: 1px !important;
+    border-top: double 3px #4553a2;
+}
+
+
+/* Edit your details header */
+form > .table {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    border-bottom: double 4px #4553a2 !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+/* Edit your details left side */
+#editdetailspanel .table .left {
+    background: #7c80ba !important;
+    color: #dad9ef;
+    border-radius: 0px !important;
+    border-right: double 4px #4553a2;
+}
+
+/* Edit your details right side */
+#editdetailspanel .table {
+    background: #7c80ba;
+    border-radius: 0px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top: 0px !important;
+}
+
+/* Ignore */
+#editdetailspanel .table {
+  border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+
+/* Account Settings Box */
+form div.left {
+background: none;
+}
+
+
+/* Sidebar boxes */
+.col-md-3 .panel {
+    background: #a7abd8;
+    border: double 4px #4553a2;
+    box-shadow: none;
+    border-radius: 15px;
+}
+
+
+/* Text Areas (Boxes where you write stuff) */
+textarea, ::placeholder, #fra_chatContainer #txtChatInput {
+    color: #000 !important;
+}
+
+
+/* Drop Downs */
+select,
+.s-chat-sidebar #label_currentChannel{
+	background: #efe2f1 !important;
+	border-radius: 10px !important;
+	color: #000000 !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+
+/* Background For Text Areas (Where you write stuff) */
+textarea,
+input, 
+textarea.form-control,
+.form-control {
+	background: #efe2f1;
+    color: #000000;
+	border: 1px solid;
+    border-radius: 5px !important;
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+LINKS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Links */
+a:link, 
+a:visited, 
+a:active, 
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active, 
+.table .top a:link,
+.table .top a:visited,
+.table .top a:active,
+.table .bottom a:link, 
+.table .bottom a:visited, 
+.table .bottom a:active, 
+.featured-lion a:link, 
+.featured-lion a:active, 
+.featured-lion a:visited,
+.table th a:link, 
+.table th a:active, 
+.table th a:visited,
+.center > .cave-grid {
+	color: #f5edf8;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Links Hover */
+a:hover,
+a:focus, 
+.topbar a:hover,
+.topbar a:focus, 
+.table .top a:hover,
+.table .top a:focus,
+.table .bottom a:hover, 
+.table .bottom a:focus,
+.featured-lion a:hover,
+.featured-lion a:focus,
+.table th a:hover,
+.table th a:focus{
+	color: #dad9f9;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Account Settings Link */
+form div.left a:link,
+form div.left a:visited,
+form div.left a:active {
+    color: #fff;
+    font-weight: bold;
+    }
+
+/* Account Settings Link Hover */
+form div.left a:hover,
+form div.left a:focus {
+    color: #ffe4f2;
+    }
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+COMMENT BOX
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Container */
+#commentBox {
+    background: #9d9cd6;
+    border-radius: 15px !important;
+    height: 300px !important;
+    overflow: auto;
+    color: #7a6c96;
+    border: double 4px #4553a2 !important;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+    transition: 1s;
+}
+
+/* Comment Box Hover (For collapsed box) */
+#commentBox:hover {
+    height: 300px !important;
+}
+
+
+/* Controls space between comment box and lion stat table */
+#comment {
+margin-bottom: 40px;
+}
+
+/* Comment Text */
+.commentText {
+   color: #ebe8f3;
+}
+
+/* Every odd message */
+.comment:nth-child(even) {
+   background-color: #b8b0e7 !important;
+    border-top: dashed 1px #737791 !important;
+    border-bottom: dashed 1px #737791;
+}
+
+/* by User on "date" at "time" text */
+.commentText .text-muted {
+    color: #443f46;
+}
+
+/* Comment links */
+.text-muted a:link,
+.text-muted a:visited,
+.text-muted a:active {
+    background: none;
+    color: #655b90;
+}
+
+/* Comment links hover */
+.text-muted a:focus,
+.text-muted a:hover {
+    background: none;
+    color: #edecf2;
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+PROGRESS BARS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Background */  
+.progress {
+	background: #555468;
+    border: dotted 1px #4553a2;
+	border-radius: 10px !important;
+    }
+
+
+/* Bars Text */
+.progress div {
+    color: #fff;
+}
+
+/* Energy */
+.progress-bar-warning {
+    background: linear-gradient(90deg,rgba(112, 117, 176, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(241, 196, 231, 1) 100%) !important;
+		border-radius: 5px !important;
+}
+
+/* Hunger */
+.progress-bar-danger {
+    background: linear-gradient(90deg,rgba(241, 196, 231, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(112, 117, 176, 1) 100%) !important;
+		border-radius: 5px !important;
+}
+
+/* EXP & Progress */
+.progress-bar-success {
+    background: linear-gradient(90deg,rgba(112, 117, 176, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(241, 196, 231, 1) 100%) !important;
+		border-radius: 5px !important;
+}
+
+/* Impression */
+.progress-bar {
+    background: linear-gradient(90deg,rgba(241, 196, 231, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(112, 117, 176, 1) 100%);
+    border-radius: 5px !important;
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+CAVES AND MOUNDS
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Backgrounds */
+.cave-grid,.mound-grid {
+background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+	border: double 4px #4553a2;
+	border-radius: 16px !important;
+}
+
+/* Cave and mound images border */
+.cave-grid img, .mound-grid img {
+    border-bottom: double 4px #4553a2 !important;
+}
+
+/* Smaller mounds */
+.mound-grid {
+    width: 99%;
+    padding: 0px 0px 5px;
+    margin-left: -0px;
+    margin-bottom: 15px;
+}
+
+/* Mound images cover the entire box width */
+.mound-grid img {
+    width: 100%;
+    height: 90px;
+}
+
+/* Ignore (Pregnant Lionesses Text will be bold) */
+.center > .cave-grid {
+    font-weight: bold;
+}
+
+
+/* UNSORTED CAVE IMAGE */
+img[src$="unsortedlionsbanner.png"] {
+    content: url(https://i.ibb.co/pr52z076/unsorted.png) !important;
+}
+
+/* NESTING / PREGNANT LIONESSES IMAGE */
+img[src$="nestingbanner.png"] {
+    content: url(https://i.ibb.co/bM7WB0GM/Nest.png) !important;
+}
+
+/* PRIDE OVERVIEW IMAGE */
+img[src$="prideoverviewbanner.png"] {
+    content: url(https://i.ibb.co/d0w80btV/Pride-overview.png) !important;
+}
+
+/* ALL CAVES IMAGE */
+img[src$="cavedefault.jpg"] {
+    content: url(https://i.ibb.co/9kDQKKLW/cave.png) !important;
+}
+
+/* EMPTY CAVES IMAGE */
+img[src$="caveunused.jpg"] {
+    content: url(https://i.ibb.co/9kDQKKLW/cave.png) !important;
+    filter: grayscale(99%);
+}
+
+/* UNSORTED MOUND IMAGE */
+img[src$="beetleunsorted.png"] {
+    content: url(https://i.ibb.co/XcZx7CR/mound-unsorted.png) !important;
+}
+
+/* ALL MOUNDS IMAGE */
+img[src$="beetlemound.png"] {
+    content: url(https://i.ibb.co/7d5HNtKn/Mound.png) !important;
+}
+
+/* CREATE MOUND IMAGE */
+img[src$="addbeetlemound.png"] {
+    content: url(https://i.ibb.co/7d5HNtKn/Mound.png) !important;
+    border-radius: 0px;
+    filter: grayscale(99%);
+}
+
+
+/* 
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+DYNASTY
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Makes Dynasty 1 Row */
+.dynastylist {
+    width: 170px;
+}
+
+/* Dynasty Images Background */
+.dynastylist .left {
+    background: none !important;
+    box-shadow: none;
+    border: none;
+}
+
+/* Dynasty Text Titles */
+.left h3 {
+    background: #7c80ba;
+    color: #d0d1e5;
+    font-size: 12px !important;
+    height: 25px;
+    padding: 4px;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid 1px #4553a2;
+    border-bottom: none;
+}
+
+
+.left img {
+border: solid 1px #4553a2;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+
+/* Dynasty Text Links Hover */
+.dynastylist:hover h3,
+.dynastylist:focus h3 {
+    color: #e2d7eb;
+}
+
+/* Dynasty Image Links Hover */
+.left img:hover,
+.left img:focus{
+    filter: grayscale(50%);
+}
+
+
+/* King Dynasty */
+img[src$="den_ancestors.png"] {
+    content: url(https://static.lioden.com/images/layout/den_ancestors.png) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Pride Dynasty */
+img[src$="den_ancestorsfem.png"] {
+    content: url(https://static.lioden.com/images/layout/den_ancestorsfem.png) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Achievements */
+img[src$="den_achievements.png"] {
+    content: url(https://static.lioden.com/images/layout/den_achievements.png) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Showcase */
+img[src$="den_showcase.png"] {
+    content: url(https://static.lioden.com/images/layout/den_showcase.png) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Beetle Book */
+img[src$="den_beetlebook.png"] {
+    content: url(https://static.lioden.com/images/layout/den_beetlebook.png) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+BUTTONS
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Common Buttons */
+.select-control,
+a.button,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+background: linear-gradient(0deg,rgba(241, 196, 231, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(112, 117, 176, 1) 100%);
+color: #fff;
+border: double 3px #4553a2;
+text-shadow: 1px 1px 1px #000;
+font-weight: bold;
+font-size: 13px;
+border-radius: 10px !important;
+}
+
+.right_odd input {
+    width: 60px;
+}
+
+
+/* Common Buttons Hover */
+.select-control:hover,
+a.button:hover,
+button.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background: linear-gradient(0deg,rgb(244, 216, 238) 0%, rgb(195, 191, 244) 50%, rgb(134, 140, 201) 100%);
+color: #fff;
+border: double 3px #4553a2;
+text-shadow: 1px 1px 1px #000;
+font-weight: bold;
+font-size: 13px;
+border-radius: 10px;
+}
+
+
+/* View Breeding Requests, View Your User Log & View Attack History */
+.col-sm-4 .left {
+background: linear-gradient(0deg,rgba(241, 196, 231, 1) 0%, rgba(178, 174, 231, 1) 50%, rgba(112, 117, 176, 1) 100%);
+color: #fff;
+border: double 3px #4553a2;
+text-shadow: 1px 1px 1px #000;
+font-weight: bold;
+font-size: 12px;
+border-radius: 10px !important;
+}
+
+/* View Breeding Requests, View Your User Log & View Attack History Hover */
+.col-sm-4 .left:hover,
+.col-sm-4 .left:focus {
+background: linear-gradient(0deg,rgb(244, 216, 238) 0%, rgb(195, 191, 244) 50%, rgb(134, 140, 201) 100%);
+color: #fff;
+border: double 3px #4553a2;
+text-shadow: 1px 1px 1px #000;
+font-weight: bold;
+font-size: 12px;
+border-radius: 10px;
+}
+
+
+/* Red Buttons (Like Destroy Cave) */
+.select-control.bad,
+a.button.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad {
+	background: #ff5454;
+	background: -moz-linear-gradient(top,  #ff5454 5%, #c62525 5%, #c62525 49%, #c62525 95%, #9b1d1d 95%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ff5454), color-stop(5%,#c62525), color-stop(49%,#c62525), color-stop(95%,#c62525), color-stop(95%,#9b1d1d));
+	background: -webkit-linear-gradient(top,  #ff5454 5%,#c62525 5%,#c62525 49%,#c62525 95%,#9b1d1d 95%);
+	background: -o-linear-gradient(top,  #ff5454 5%,#c62525 5%,#c62525 49%,#c62525 95%,#9b1d1d 95%);
+	background: -ms-linear-gradient(top,  #ff5454 5%,#c62525 5%,#c62525 49%,#c62525 95%,#9b1d1d 95%);
+	background: linear-gradient(to bottom,  #ff5454 5%,#c62525 5%,#c62525 49%,#c62525 95%,#9b1d1d 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5454', endColorstr='#9b1d1d',GradientType=0 );
+
+	color: #fff;
+	border: 1px solid #9b1d1d;
+	text-shadow: 1px 1px 0px #9b1d1d;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 3px 12px;
+	margin: 2px 0;
+	border-radius: 3px;
+}
+
+/* Red Buttons Hover (Like Destroy Cave) */
+.select-control.bad:hover,
+a.button.bad:hover,
+button.button.bad:hover,
+input[type="button"].bad:hover,
+input[type="submit"].bad:hover,
+input[type="reset"].bad:hover {
+	background: #ff6f6f;
+	background: -moz-linear-gradient(top,  #ff6f6f 5%, #db3b3b 5%, #db3b3b 49%, #db3b3b 95%, #c42424 95%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ff6f6f), color-stop(5%,#db3b3b), color-stop(49%,#db3b3b), color-stop(95%,#db3b3b), color-stop(95%,#c42424));
+	background: -webkit-linear-gradient(top,  #ff6f6f 5%,#db3b3b 5%,#db3b3b 49%,#db3b3b 95%,#c42424 95%);
+	background: -o-linear-gradient(top,  #ff6f6f 5%,#db3b3b 5%,#db3b3b 49%,#db3b3b 95%,#c42424 95%);
+	background: -ms-linear-gradient(top,  #ff6f6f 5%,#db3b3b 5%,#db3b3b 49%,#db3b3b 95%,#c42424 95%);
+	background: linear-gradient(to bottom,  #ff6f6f 5%,#db3b3b 5%,#db3b3b 49%,#db3b3b 95%,#c42424 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f6f', endColorstr='#c42424',GradientType=0 );
+
+	color: #fff;
+	border: 1px solid #9b1d1d;
+	text-shadow: 1px 1px 0px #9b1d1d;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 3px 12px;
+	margin: 2px 0;
+	border-radius: 3px;
+}
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+SCROLLBAR
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Size */
+::-webkit-scrollbar
+{
+  width: 12px;
+}
+
+/* Background */
+::-webkit-scrollbar-track
+{
+  background: #7075b0;
+}
+
+/* Background Behind Arrows */
+::-webkit-scrollbar-button
+{
+  border-style: solid;
+  height: 12px;
+  width: 16px;
+  background: #7075b0 /* Same color as Scrollbar Background */;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb
+{
+  background: #b5c3f7;
+  border-radius: 90px;
+  border: solid 3px #7075b0;
+}
+
+/* Thumb Hover */
+::-webkit-scrollbar-thumb:hover
+{
+  background: #d2dbfc;
+}
+
+/* Arrow Up */
+::-webkit-scrollbar-button:vertical:decrement
+{
+  border-width: 0 6px 7px 8px;
+  border-color: transparent transparent /* Arrow Color > */ #b5c3f7 transparent;
+}
+
+/* Arrow Down */
+::-webkit-scrollbar-button:vertical:increment
+{
+  border-width: 7px 6px 0 8px;
+  border-color: /* Arrow Color > */ #b5c3f7 transparent rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+CHAT BOX
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Chat container */
+#chatMessageContainer {
+    border: double 3px #4553a2;
+	border-radius: 10px;
+    height: 100%;
+    width: 99%;
+}
+
+#txtChatContainer {
+    width: 99%;
+    }
+    
+#fraSidebarChat {
+    width: 100%;
+    height:650px;
+}
+
+
+/* Pinned Message */
+#chatMessagePinned.s-chat-message__pinned {
+background: url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 8px, linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%) !important;
+border-bottom: double 3px #4553a2;
+	border-top: double 5px #4553a2;
+color: #d6d9f5;
+font-weight: bold;
+	margin-top: -10px;
+	padding-top: 10px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+/* Chat Messages (ODD) */
+.s-chat-message:nth-child(odd) {
+    background: #8287bc;
+    color: #2d2740;
+    border-bottom: dashed 1px #4553a2;
+    font-weight: normal;
+}
+
+/* Chat Messages (EVEN) */
+.s-chat-message:nth-child(even) {
+    background: #a7abd8;
+    color: #2d2740;
+    border-bottom: dashed 1px #4553a2;
+    font-weight: normal;
+}
+
+/* Timestamp Color */
+.s-chat-message_timestamp {
+    color: #574d76 !important;
+}
+
+/* Background of message when clicking the 3 dots of it */
+.s-chat-message.hasContext {
+    background-color: #cab7e7 !important;
+    border-left-color: #8878a1 !important;
+}
+
+/* Chat Menu Drop Down Background */
+	.s-chat-sidebar #fraChatChannelMenu, 
+#context-chatMenu .chatMenu-option,
+	#fraChatSettingsMenu .chatMenu-option, 
+#context-chatMenu, 
+.emoteList, #context-chatMenu .chatMenu-option,
+	#fraChatSettingsMenu .chatMenu-option {
+		background: #7075b0;
+        color: #fff;
+	}
+
+
+/* Chat Menu Drop Down Current Selected Channel */
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+    background: #b2aee7;
+    color: #ffffff;
+}
+
+
+/* Chat Menu Drop Down Text Color */
+#fra_chatContainer .channelMenu .channelSwitcher {
+		color: #ffffff;
+	}
+
+
+/* Chat Menu Drop Down Channel Hover */
+#fra_chatContainer .channelMenu .channelSwitcher:hover, 
+#context-chatMenu .chatMenu-option:hover,
+#fraChatSettingsMenu .chatMenu-option:hover {
+		background: #cab7e7;
+		color: #FFF;
+	}
+
+
+/* Chat Icons */
+#btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
+		    filter: brightness(1000%); /* Higher number = Brighter images */
+	}
+
+
+/* Character Counter */
+#txtChatContainer #lblCharacterCounter {
+    color: #ffffff;
+}
+
+
+/* Mod Messages */
+#fra_chatContainer .modMessage,
+	.s-chat-message__mod {
+		background: #98EE90 !important;
+		border-bottom-color: #7FCF77 !important;
+		border-top-color: #B2F3AC !important;
+		color: #243822 !important;
+		font-weight: bold;
+	}
+
+
+.s-chat-sidebar #fraChatChannelMenu, 
+#context-chatMenu .chatMenu-option,
+#fraChatSettingsMenu .chatMenu-option, 
+#context-chatMenu, 
+.emoteList, #context-chatMenu .chatMenu-option,
+#fraChatSettingsMenu .chatMenu-option {
+    box-shadow: 1px 2px 5px #a489b5 !important;
+        border: 1px dashed #4553a2;
+}
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+CAVE VIEW
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Featured Lion Background */
+.featured-lion {
+    background: #a7abd8;
+    color: #565b93;
+    border: double 5px #4553a2;
+    margin-bottom: 40px;
+}
+
+/* Border Around Featured Lion Picture */
+.featured-lion img {
+    border: none;
+}
+
+/* Featured Lion: Link Text */
+.center.b {
+    border-top: double 5px #4553a2;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    margin-top: -1.671px;
+}
+
+/* Featured Lion Background Picture */
+img[src$="default.png"] {
+content: url("https://static.lioden.com/images/dynamic/backgrounds/romantic_waterfall1.png"); 
+width: 100%
+}
+
+
+/* Ignore */
+#pride th {
+    border: none !important;
+}
+
+
+/* Headers with LV, Stats, Name, Age & Status Titles */
+#pride .left {
+    background: #7075b0 !important;
+    color: #dad5e6;
+    border-top: solid 1px #000 !important;
+    border-bottom: solid 1px #000 !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+
+/* Background for lions */
+#pride {
+    background: #a7abd8;
+    color: #3b3862;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+/* Background for every odd lion */
+.table .right_odd {
+    background: #8287bc !important;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .35), 0px -2px 0px 0px rgba(0, 0, 0, .35);
+    position: relative;
+    top: -1px;
+    height: 50px;
+}
+
+
+#pride .right {
+    height: 50px;
+}
+
+/* Background for cubs */
+.right_cub {
+    background: #cab7e7 !important;
+    border: none !important;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .15), 0px -2px 0px 0px rgba(0, 0, 0, .15);
+    height: 50px;
+    
+}
+
+
+/* Ignore */
+#pride .bottom, .auto .bottom {
+    border-radius: 0px;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+/* Cave Settings */
+form .auto {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+/* Ignore */
+.col-md-9 > .table {
+ border-radius: 10px !important;   
+}
+
+/* Cave Stats Left Side */
+.col-md-9 > .table .left {
+    background: #797cb7;
+    border-radius: 0px !important;
+}
+
+
+/* Makes Cave Settings background one color */
+form .auto .b {
+    background: none;
+}
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+BRANCH
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Owned By */
+div .left {
+    background: none;
+    border-radius: 2px !important;
+    color: #deddef;
+}
+
+/* Header */
+.item-header {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    color: #2f2b65;
+    border-top: double 4px #4553a2;
+    border-bottom: double 4px #4553a2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Footer */
+.item-footer {
+    background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+    color: #fbfbff;
+    border-top: double 4px #4553a2;
+    border-bottom: double 4px #4553a2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Item Background */
+.item {
+    background: #d5bae79c;
+    color: #7d6c9b;
+    border: double 4px #4553a2;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-radius: 15px;
+    }
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+ALERTS
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Alerts such as details have been saved */
+.alert-success {
+    background-color: #c4d3b2;
+    color: #475f2c;
+    border: solid 1px #ffffff96;
+    border-radius: 6px;
+    padding: 7px 15px;
+}
+
+.alert-success a:link,
+.alert-success a:visited,
+.alert-success a:active {
+    color: #eff5e7;
+}
+
+.alert-success a:hover,
+.alert-success a:focus {
+    color: #fff;
+}
+
+/* Alerts such as forum/pm notifications or lions leaving due to starvation */
+.alert-danger {
+    background-color: #edc2e7;
+    color: #6f495a;
+    border: solid 1px #ffffffb5;
+    border-radius: 6px;
+    padding: 7px 15px;
+}
+
+.alert-danger a:link,
+.alert-danger a:visited,
+.alert-danger a:active {
+    color: #fef3f7;
+}
+
+.alert-danger a:hover,
+.alert-danger a:focus {
+    color: #fff;
+}
+
+/* Other alerts */
+.alert-info {
+    background-color: #b9ccf4;
+    color: #3e5c9a;
+    border-color: #ffffffb3 !important;
+    border: solid 1px #98c2ca;
+    border-radius: 6px;
+    padding: 7px 15px;
+}
+
+.alert-info a:link,
+.alert-info a:visited,
+.alert-info a:active {
+    color: #f2f6ff;
+}
+
+.alert-info a:hover,
+.alert-info a:focus {
+    color: #fff;
+}
+
+
+.alert-custom1 {
+    background-color: #797cb7;
+    color: #e2e3f0;
+    border: double 4px #4553a2;
+    border-radius: 15px;
+    padding: 7px 15px;
+    margin-bottom: -50px;
+}
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+MEDIA QUERIES
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+/* Dynasty */
+@media only screen and (max-width: 600px) {
+    .dynastylist {
+        width: 136px;
+        margin: -11px;
+    }
+}
+
+/* Breadcrumb After */
+    @media only screen and (max-width: 600px) {
+        .breadcrumb::after {
+            right: 23%
+        }
+    }
+
+
+    /* Links in player profile on own profile visit */
+@media only screen and (max-width: 600px) {
+        .center.xlarge {
+            font-size: 12px !important;
+            top: 0px !important;
+            margin-left: 40px !important;
+            width: 300px !important;
+            height: 20px;
+            overflow: hidden;
+    white-space: nowrap;
+    float: left !important;
+    position: relative;
+        }
+    }    
+
+/* Links in player profile */
+     @media only screen and (max-width: 600px) {
+        .right p.center {
+            margin-left: 315px;
+            margin-right: -180px;
+            font-size: 11px;
+            top: -5px;
+            width: 220px;
+            overflow: hidden;
+    white-space: nowrap;
+            position: relative;
+        }
+    }
+
+/* Links in player profile */
+     @media only screen and (max-width: 600px) {
+        .right .xlarge {
+            margin-left: 8px;
+            font-size: 11px;
+            top: 20px;
+            position: relative;
+        }
+    }
+
+/* Links in player profile */
+     @media only screen and (max-width: 600px) {
+        .text-muted  {
+            margin: 1px;
+        }
+    }
+
+
+/* Space between the feed all and recent allies boxes on phone */
+     @media only screen and (max-width: 600px) {
+        div .feature  {
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Header text inside the FAPA boxes */
+@media only screen and (max-width: 600px) {
+        div.feature h3  {
+    padding: 8px 15px;
+    width: 554px;
+    font-size: 15px;
+    font-weight: bold;
+    top: -5px;
+    position: relative;
+    margin-left: -8px;
+    text-align: left;
+    }
+    }
+
+
+
+/* 
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+BOXES
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+*/
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+        
+}
+
+.box1{
+background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+color: #fff;
+  position: relative;
+  max-width: 900px;
+  width: 900px;
+padding-bottom: 10px;
+border: double 4px #4553a2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box2{
+background: #797cb7;
+color: #ede4f6;
+  position: relative;
+  max-width: 900px;
+  width: 900px;
+border: double 4px #4553a2;
+    border-top: none;
+  font-weight: bold;
+padding: 5px;
+}
+
+.box3{
+background: #b2aee7;
+color: #57416e;
+  position: relative;
+  max-width: 900px;
+  width: 900px;
+    text-align: left;
+border: double 4px #4553a2;
+    word-break: keep-all;
+    padding: 7px;
+    overflow: auto;
+    height: 250px;
+}
+
+.box4{
+background: linear-gradient(180deg,rgba(104, 119, 204, 1) 0%, rgba(148, 158, 235, 1) 50%, rgba(188, 179, 232, 1) 100%);
+color: #fff;
+  position: relative;
+  max-width: 900px;
+  width: 900px;
+border: double 4px #4553a2;
+    border-top: solid 1px #4553a2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+padding: 12px;
+    margin-bottom: -40px;
+}
+
+.infobox {
+	background: #b2aee7;
+	color: #57416e;
+	padding: 10px;
+    z-index: 100;
+    position: fixed;
+	border: double 4px #4553a2;
+    border-bottom: none;
+	border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+	height: 50px;
+	width: 250px;
+    transition: 1s;
+    margin-bottom: -18px;
+    bottom: 0;
+    text-align: left;
+    font-size: 12px;
+    left: 10px;
+}
+
+.infobox:hover,
+.infobox:focus {
+    height: 250px;
+}
